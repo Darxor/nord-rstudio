@@ -177,7 +177,7 @@
 }
 
 .ace_comment {
-  font-style: italic;
+  /* font-style: italic; */
   color: #616E88;
 }
 
