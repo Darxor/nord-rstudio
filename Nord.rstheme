@@ -6,8 +6,8 @@
 }
 
 .ace_print-margin {
-  width: 2px;
-  background: #14161D;
+  width: 1px;
+  background: #464e61;
 }
 
 .ace_editor {
@@ -178,7 +178,7 @@
 
 .ace_comment {
   /* font-style: italic; */
-  color: #616E88;
+  color: #78849b;
 }
 
 .ace_invisible {
