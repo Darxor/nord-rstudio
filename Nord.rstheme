@@ -2804,6 +2804,7 @@ input#rstudio_command_palette_search {
 .rstudio-themes-flat .dialogContent > table div,
 .rstudio-themes-flat .dialogContent [id^="rstudio_label_"][id$="_panel"] table tbody td {
   border-color: #464e61;
+  background-color: transparent;
 }
 
 .rstudio-themes-flat .dialogContent .gwt-TabLayoutPanelTab {
@@ -2889,7 +2890,12 @@ input#rstudio_command_palette_search {
   font-weight: 600;
 }
 
+.rstudio-themes-flat .dialogContent input[type="number"] {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 2px;
 }
+
 .rstudio-themes-flat .dialogContent select {
   background: #464e61 !important;
   color: #D8DEE9 !important;
@@ -3082,4 +3088,41 @@ input#rstudio_command_palette_search {
 .rstudio-themes-flat .rstudio-themes-dark-grey {
     color: rgb(216, 222, 233) !important;
     background: #434C5E !important;
+}
+
+/* Update Packages */
+
+.rstudio-themes-flat .dialogContent table[role="presentation"] >
+  tbody > tr > td > div[style="margin-right: 2px;"] {
+  background-color: #2E3440;
+}
+
+.gwt-DialogBox .dialogContent thead th {
+    background-color: #3B4252 !important;
+    border-color: #3B4252 !important;
+    color: inherit;
+}
+
+.gwt-DialogBox .dialogContent tbody tr,
+.gwt-DialogBox .dialogContent tbody td {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+}
+
+.gwt-DialogBox .dialogContent thead th:not(:last-child) {
+  border-right-width: 0;
+}
+
+/* Loading / Opening dialog */
+
+div[style*="position: absolute"] > div[style*="position: absolute"]
+table[role="presentation"].border {
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px rgba(0 0 0 / 0.5);
+}
+
+div[style*="position: absolute"] > div[style*="position: absolute"]
+table[role="presentation"].border > tbody > tr > td {
+  background-image: none;
 }
