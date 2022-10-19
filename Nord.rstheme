@@ -2889,6 +2889,7 @@ input#rstudio_command_palette_search {
   font-weight: 600;
 }
 
+}
 .rstudio-themes-flat .dialogContent select {
   background: #464e61 !important;
   color: #D8DEE9 !important;
